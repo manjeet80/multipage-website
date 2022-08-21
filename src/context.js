@@ -19,7 +19,7 @@ const updateHomePage = () =>{
     return dispatch({
         type:"HOME_UPDATE",
         payload:{
-            name:"Technical Website",
+            name:"Home Page",
             image:"./images/hero.svg"
         }
     })

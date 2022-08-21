@@ -9,7 +9,7 @@ const Service = () => {
   console.log(services);
   return (
     <Wrapper className="section">
-      <h2 className="common-heading">Our Services</h2>
+      <h2 className="common-heading">Our Products</h2>
       <div className="container grid grid-three-column">
         {services.map((curElement) => {
           return (
@@ -22,7 +22,7 @@ const Service = () => {
                 <p>$  {curElement.price}</p>
                
                 <NavLink to="/service">
-                  <button className="read-btn">Read More</button>
+                  <button className="read-btn">Add Products</button>
                 </NavLink>
               </div>
             </div>

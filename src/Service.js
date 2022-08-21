@@ -18,8 +18,9 @@ const Service = () => {
                 <img src={curElement.image} alt={curElement.name} />
               </figure>
               <div className="card-data">
-                <h3>{curElement.name}</h3>
-                <p>{curElement.description}</p>
+              <h3>{curElement.category}</h3>
+                <p>$  {curElement.price}</p>
+               
                 <NavLink to="/service">
                   <button className="read-btn">Read More</button>
                 </NavLink>
@@ -36,14 +37,18 @@ padding:9rem 0;
 background-color:${({theme}) =>theme.colors.bg};
 
 .container{
-  max-width:120rem;
+  max-width:100rem;
 }
 .card{
-  
-  border:0.1rem solid rgb(170 170 170 / 40%);
+  border-radius:5px;
+  box-shadow:0 0 5px grey;
 }
 .card-data{
 padding:0 2rem;
+display:block;
+text-align:center;
+
+text-transform:uppercase;
 }
 figure{
   width:auto;
@@ -54,12 +59,10 @@ figure{
  img{
   max-width:90%;
   margin-top:1.5rem;
-  height:20rem;
-  transition:all 0.2s linear;
+  height:25rem;
+  
 }
- img:hover{
-    transform:scale(1.2);
-  }
+
   .read-btn{
     margin:2rem auto;
     background-color:rgb(0 0 0 / 0%);
